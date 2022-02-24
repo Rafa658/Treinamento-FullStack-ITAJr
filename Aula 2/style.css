@@ -81,7 +81,7 @@ body {
 }
 
 .topnav a {
-    color: red;
+    color: var(--light-color);
     text-decoration: none;
     text-align: center;
     color: var(--light-color);
@@ -100,6 +100,9 @@ body {
 }
 
 @media screen and (max-width:768px) {
+    body {
+        overflow: hidden;
+    }
     .login-area {
         width: 80vw;
     }
@@ -109,7 +112,8 @@ body {
     .login-area .btn {
         width: 90%;
     }
-    .topnav {
-        justify-content: space-between;
+    .topnav a {
+        width: 100%;
+        padding: 1rem 0;
     }
 }

@@ -6,4 +6,4 @@ let jurosSimples = (capital, taxa, tempo) => capital * (1 + taxa * tempo)
 
 let jurosCompostos = (capital, taxa, tempo) => capital * Math.pow(1 + taxa, tempo)
 
-console.log(jurosSimples(capital, taxa, tempo), jurosCompostos(capital, taxa, tempo));
+console.log(jurosSimples(capital, taxa, tempo).toFixed(2), jurosCompostos(capital, taxa, tempo).toFixed(2));

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
 :root {
     --primary-color: #183358;
-    --light-color: #eee;
+    --secondary-color: #d8c11a;
+    --light-color: #f4f4f4;
     --dark-color: #333;
 }
 
@@ -72,6 +73,30 @@ body {
     background: var(--primary-color);
     color: var(--light-color);
     cursor: pointer;
+}
+
+.topnav {
+    overflow: hidden;
+    background: var(--dark-color);
+}
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    color: #f2f2f2;
+    float: left;
+    padding: 15px 15px;
+}
+
+.topnav a:hover {
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+.topnav a.active {
+    background: var(--secondary-color);
+    color: var(--light-color);
 }
 
 @media screen and (max-width:768px) {

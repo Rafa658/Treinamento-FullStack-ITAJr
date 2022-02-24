@@ -103,6 +103,9 @@ body {
     body {
         overflow: hidden;
     }
+    .login-area form {
+        margin: 1rem 0;
+    }
     .login-area {
         width: 80vw;
     }

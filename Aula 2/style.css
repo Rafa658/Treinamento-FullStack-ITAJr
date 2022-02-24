@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+:root {
+    --primary-color: #183358;
+    --light-color: #eee;
+    --dark-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: var(--primary-color);
+}
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    background: var(--light-color);
+    width: 500px;
+    height: 500px;
+    margin: 15vh auto;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-area span {
+    font-size: 2rem;
+}
+
+.login-area a {
+    text-decoration: none;
+    color: #1974D2;
+}
+
+.login-area a:hover {
+    text-decoration: underline;
+}
+
+.login-area form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.login-area input {
+    background: var(--light-color);
+    height: 3rem;
+    width: 450px;
+    margin: .5rem auto;
+    border: 1px solid #d3d3d3;
+}
+
+.login-area input:focus {
+    outline: none;
+}
+
+.btn {
+    width: 450px;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    border-radius: 0;
+    background: #ddd;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .login-area {
+        width: 80vw;
+    }
+    .login-area input {
+        width: 90%;
+    }
+    .login-area .btn {
+        width: 90%;
+    }
+}
